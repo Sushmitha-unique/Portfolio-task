@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>portfolio</title>
+    <style>
+      body {
+  box-sizing: content-box;
+      }
+      .black {
+      width: 100%;
+      height: 520px;
+      padding-top:15px;
+      position: relative;
+      background-color: black;
+     }
+    .black:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: 75px solid white ;
+      border-left: 700px solid transparent;
+      border-right: 500px solid transparent ;
+    }
+    .circle {
+      font-size: 4em;
+      display: inline-block;
+      width: 0.4em;
+      box-sizing: content-box;
+      height: 0.4em;
+      border: 8px solid #39a5c9;
+      position: relative;
+      border-radius: 0.35em;
+    }
+     .nav-link{
+        color: white;
+        margin-left: 50px;
+     }
+     .btn-blue {
+        background-color: #39a5c9;
+        border-color: #39a5c9;
+        color: black; 
+        margin-left: 200px;
+        border-radius: 0px ;
+        width: 120px;
+    }
+    .black img {
+        position: absolute;
+        top: 60%;
+        left:20%;
+        transform: translate(-50%, -50%);
+        width: 200px; 
+        height: auto; 
+      }
+      .btn-dowm{
+        border-color: #39a5c9;
+        color:#39a5c9; 
+        border-radius: 0px;
+      }
+      .s1 img{
+        height: 400px;
+        margin-left: 30px;
+      }
+      .circle-square{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: black;
+            display: inline-flex;
+        }
+        .square{
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 15px;
+            height: 15px;
+            width: 20px;
+           border: 2px solid white;
+        }
+        .service{
+          background-color: gainsboro;
+          width: 100%;
+          height: 720px;
+        }
+        .square2{
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 30px;
+            height: 30px;
+            width: 40px;
+           border: 3px solid black;
+        }
+        .square-blue{
+            height: 100px;
+            width: 100px;
+            background:#39a5c9;
+            position: absolute;
+            margin-left: 170px;
+            margin-top:-10px;
+        }
+        .whitec{
+            height: 200px;
+            width: 100%;
+            background-color:white;
+            margin: 40px;
+        }
+        .text
+        {
+          text-align: center;
+          padding-top: 70px;
+        }
+        .cam {
+      width: 100%;
+      height: 520px;
+      padding-top:15px;
+      position: relative;
+      opacity: 2px;
+      background-image: url(camera.png);
+      background-repeat: no-repeat;
+      opacity: 0.9;
+     }
+    .cam:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: 75px solid white ;
+      border-left: 700px solid transparent;
+      border-right: 500px solid transparent ;
+    }
+    .CV{
+      position: absolute;
+      margin-left: 450px;
+      margin-top: 100px;
+    }
+    .client{
+      text-align: center;
+      justify-items: center;
+    }
+    .dot {
+  height: 5px;
+  width: 5px;
+  background-color:gray;
+  border-radius: 50%;
+  display: inline-block;
+}
+.work{
+          background-color: gainsboro;
+          width: 100%;
+          height: 720px;
+          text-align: center;
+          padding: 50px;
+        }
+        .w1{
+          height: 200px;
+            width: 100%;
+           background-image: url(ph-1.png);
+            margin: 40px;
+        }
+        .black2 {
+      width: 100%;
+      height: 950px;
+      padding-top:15px;
+      position: relative;
+      background-color: black;
+     }
+    .black2:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: 75px solid white ;
+      border-left: 700px solid transparent;
+      border-right: 500px solid transparent ;
+    }
+    .align{
+      text-align: center;
+    }
+    .blog{
+      background-color: white;
+      margin-left: 50px;
+      padding: 15px;
+    }
+    .Contact{
+      text-align: center;
+    }
+    .half-square{
+        height: 40px;
+        width: 20px;
+        border: 4px solid black;
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+        margin-left: 150px;
+      margin-top: 20px;
+    }
+    .square3{
+      height: 40px;
+        width: 40px;
+        border: 4px solid black;
+        margin-left: 150px;
+      margin-top: 20px;
+    }
+    .btn-fin {
+        background-color: #39a5c9;
+        border-color: #39a5c9;
+        color: black; 
+        margin-left: 400px;
+        border-radius: 0px ;
+        width: 200px;
+    }
+    .footer{
+      width: 100%;
+      height: 250px;
+      background: black;
+    }
+    .f1{
+   display: flex;
+   justify-content: center;
+   padding-top: 50px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .square-fin{
+      height: 20px;
+       width: 20px;
+      border: 2px solid white;
+      justify-content: center;
+      display: inline-flex;
+      margin: 10px; ;
+    }
+    .squarehalf-fin{
+      height: 20px;
+       width: 20px;
+      border: 2px solid white;
+      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+     margin: 10px;
+      justify-content: center;
+      display: inline-flex;
+    }
+    .f2{
+      margin-left: 450px;
+    }
+    </style>
+</head>
+<body>
+  <div class="contaniner">
+    <div class="black">
+        <nav class="navbar navbar-expand">
+            <div class="contaniner">
+              <ul class="navbar-nav">
+                <div class="circle" style="margin-left: 40px;"></div>
+                <h3 style="color: white; padding-left: 10px;" class="navbar-brand">Creative</h3>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="margin-left: 40px;">HOME</a>
+                </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">WORK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                  </li>
+              </ul>
+            </div>
+            <form class="form-inline my-2">
+                     <button class="btn btn-blue my-2 " type="submit">Contact</button>
+           </form>
+          </nav>
+          <br>
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="man.png" alt="man">
+            </div>
+            <div class="col-sm-6">
+              <h4 style="color: #39a5c9;">Johnathan Vics</h4>
+              <h1 style="color: white;">I'm a Creative</h1>
+              <h1 style="color: #39a5c9;"> Designer</h1>
+              <p style="color: white">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do 
+                eiusmod tempor incididuct ut labore magna alique.ut environment
+                ad minim veniam quis nostrued exercitation ullamco laboris nisi ut
+                aliquip ex ea commado consequat
+              </p>
+                <button type="submit" class="btn btn-dowm">DOWNLOAD CV</button>
+            </div>
+          </div>
+  </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="s1">
+                <img src="man-2.png" alt="man">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <h3 style="margin-top: 50px;"> About <span style="color: #39a5c9;" >Me</span></h3>
+              <h5>Hello! i'm Johnnathan V cs.</h5>
+              <br>
+              <p style="color: gray">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do 
+                eiusmod tempor incididuct ut labore magna alique.ut environment
+                ad minim veniam quis nostrued exercitation ullamco laboris nisi ut
+                aliquip ex ea commado consequat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do 
+                eiusmod tempor incididuct ut labore magna alique.ut environment
+                ad minim veniam quis nostrued exercitation ullamco laboris nisi ut
+                aliquip ex ea commado consequat
+              </p>
+              <div class="circle-square">
+                <div class="square"></div>
+              </div>
+               <div class="circle-square">
+                 <div class="square"></div>
+               </div>
+               <div class="circle-square">
+                <div class="square"></div>
+               </div>
+               <div class="circle-square">
+                <div class="square"></div>
+               </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="service">
+           <h4 style="text-align: center;"><span style="color: #39a5c9; ">Our </span>Services</h4>
+           <br>
+           <p style="text-align: center; color: gray;">We provide high standar clean website for your business solution</p>
+           <br>
+          <br>
+           <div class="row">
+           <div class="col-sm-4">
+            <div class="square-blue">
+              <div class="square2"></div>
+            </div>
+              <div class="whitec">
+                <div class="text">
+                  <h4>Graphic Design</h4>
+                  <p>There are many variations of passages of
+                    but the majority have suffered alteration in some form
+                  </p>
+                 </div>
+              </div>
+           </div>
+           <div class="col-sm-4">
+            <div class="square-blue">
+              <div class="square2"></div>
+            </div>
+              <div class="whitec">
+                <div class="text">
+                  <h4>Graphic Design</h4>
+                  <p>There are many variations of passages of
+                    but the majority have suffered alteration in some form
+                  </p>
+                 </div>
+              </div>
+           </div>
+           <div class="col-sm-4">
+            <div class="square-blue">
+              <div class="square2"></div>
+            </div>
+              <div class="whitec">
+               <div class="text">
+                <h4>Graphic Design</h4>
+                <p>There are many variations of passages of
+                  but the majority have suffered alteration in some form
+                </p>
+               </div>
+              </div>
+           </div>
+           </div>
+           <div class="row">
+           <div class="col-sm-4">
+            <div class="square-blue">
+              <div class="square2"></div>
+            </div>
+              <div class="whitec">
+                <div class="text">
+                  <h4>Graphic Design</h4>
+                  <p>There are many variations of passages of
+                    but the majority have suffered alteration in some form
+                  </p>
+                 </div>
+              </div>
+           </div>
+           <div class="col-sm-4">
+            <div class="square-blue">
+              <div class="square2"></div>
+            </div>
+              <div class="whitec">
+                <div class="text">
+                  <h4>Graphic Design</h4>
+                  <p>There are many variations of passages of
+                    but the majority have suffered alteration in some form
+                  </p>
+                 </div>
+              </div>
+           </div>
+           <div class="col-sm-4">
+            <div class="square-blue">
+              <div class="square2"></div>
+            </div>
+              <div class="whitec">
+               <div class="text">
+                <h4>Graphic Design</h4>
+                <p>There are many variations of passages of
+                  but the majority have suffered alteration in some form
+                </p>
+               </div>
+              </div>
+           </div>
+           </div>
+          </div>
+        </div>
+        <div class="cam">
+          <div class="CV">
+            <h1 style="color: white;">I Am Available For Freelancer.</h1>
+            <p style="color: white;">We provide high standar clean website for your business solution</p>
+            <button class="btn btn-blue my-2 " type="submit" style="width: 160px;">DOWNLOAD CV</button>
+          </div>
+        </div>
+        <br>
+        <div class="client">
+          <h4><span style="color: #39a5c9;">Our </span>Client</h4>
+          <p style="color: gray;">We provide high standar clean website for your business solution</p>
+          <img src="lady.png" alt="lady">
+          <p style="color: gray;">"Duis aute irure dolor in reprehendent in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint
+            occaecat cupidatat non prodent, sunt in culpa qui official deserunt mollit anim id est laborum"</p>
+            <h6>- John Doel, Company ABC</h6>
+            <div class="dot" style="width:10px; background-color: #39a5c9;"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <br>
+        <br>
+        <div class="work">
+          <h4><span style="color: #39a5c9;">Our </span>Work</h4>
+          <p style="color: gray;">We provide high standar clean website for your business solution</p>
+          <br>
+          <div class="row">
+            <div class="col-sm-4">
+             <div class="w1"></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="w1"></div>
+             </div>
+             <div class="col-sm-4">
+              <div class="w1"></div>
+             </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+             <div class="w1"></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="w1"></div>
+             </div>
+             <div class="col-sm-4">
+              <div class="w1"></div>
+             </div>
+          </div>
+        </div>
+       <div class="b1">
+        <div class="black2"> 
+          <div class="align">
+          <h4 style="color: white;"><span style="color: #39a5c9;">Our </span>Blog</h4>
+          <p style="color: gray;">We provide high standar clean website for your business solution</p>
+          <br>
+        </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="article-ph-1.png" alt="ph" style="margin: 50px;">
+              <div class="blog">
+              <h5>Occusamus et iusto odio</h5>
+              <p>May 12,2017</p>
+              <br>
+              <p>Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse oillum dolore eu
+                fugist nulla pariatur.Excepteur sintoccaecat opidatal.Exceptur
+                sint occ voluptate velit esse oillum dolore eu
+                fugist nulla pariatur.Excepteur sintoccaecat opidatal.Exceptur
+                sint .
+              </p>
+              <h5>Read More</h5>
+            </div>
+          </div>
+        <div class="col-sm-4">
+          <img src="article-ph-1.png" alt="ph" style="margin: 50px;">
+          <div class="blog">
+          <h5>Occusamus et iusto odio</h5>
+          <p>May 12,2017</p>
+          <br>
+          <p>Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse oillum dolore eu
+            fugist nulla pariatur.Excepteur sintoccaecat opidatal.Exceptur
+            sint occ voluptate velit esse oillum dolore eu
+            fugist nulla pariatur.Excepteur sintoccaecat opidatal.Exceptur
+            sint .
+          </p>
+          <h5>Read More</h5>
+        </div>
+      </div>
+<div class="col-sm-4">
+  <img src="article-ph-1.png" alt="ph" style="margin: 50px;">
+  <div class="blog">
+  <h5>Occusamus et iusto odio</h5>
+  <p>May 12,2017</p>
+  <br>
+  <p>Duis aute irure dolor in reprehenderit in 
+    voluptate velit esse oillum dolore eu
+    fugist nulla pariatur.Excepteur sintoccaecat opidatal.Exceptur
+    sint occ voluptate velit esse oillum dolore eu
+    fugist nulla pariatur.Excepteur sintoccaecat opidatal.Exceptur
+    sint .
+  </p>
+  <h5>Read More</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class="Contact">
+  <h4>Contact<span style="color: #39a5c9;">Us</span></h4>
+  <p style="color: gray;">We provide high standar clean website for your business solution</p>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="half-square"></div>
+      <br>
+      <h6>Call Us On</h6>
+      <p style="color: gray;">+985 134 3454</p>
+    </div>
+    <div class="col-sm-4">
+      <div class="square3"></div>
+      <br>
+      <h6>Email Us At</h6>
+      <p style="color: gray;">support@companyname.com</p>
+    </div>
+    <div class="col-sm-4">
+      <div class="square3"></div>
+      <br>
+      <h6>Visit Office</h6>
+      <p style="color: gray;">99 s.t.Jomblo Park pekanbaru 28292,Indonesia</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<form class="form-inline">
+ <div class="row">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="name" placeholder="Your Name*">
+  </div>
+  <div class="col-sm-6">
+    <input type="email" class="form-control" id="email"  placeholder="Your Email*">
+  </div>
+ </div>
+ <br>
+ <div>
+  <input type="text"  id="subject" placeholder="Your Subject..." class="form-control">
+ </div>
+ <br>
+ <div>
+  <textarea  id="area" cols="30" rows="7" type="text" class="form-control" placeholder="Your Message...."></textarea>
+ </div>
+</form>
+<br>
+<button class="btn btn-fin" type="submit">SEND MESSAGE</button>
+<br>
+<br>
+<div class="footer">
+ <div class="f1">
+  <div class="circle"></div>&ensp;
+  <h3 style="color: white;">CREATIVE</h3>
+ </div>
+ <br>
+ <div class="f2">
+  <div class="square-fin"></div>
+ <div class="squarehalf-fin"></div>
+ <div class="square-fin"></div>
+ <div class="square-fin"></div>
+ <div class="square-fin"></div>
+ </div>
+ <p style="color: gray; margin-left: 450px;">Copyright 2020 Coder's Gyan</p>
+</div>
+</body>
+</html>
